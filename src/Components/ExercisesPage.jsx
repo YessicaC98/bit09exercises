@@ -7,19 +7,22 @@ export const ExercisesPage = () => {
     const [exercise, setExercise] = useState (null);
   return (
     <section>
-      <h1 className="text-center p-5 text-light">Ejercicios</h1>
-      <ul className="d-flex justify-content-around list-unstyled" >
-        <li className="border border-ligth p-3 rounded text-light" onClick={() => setExercise (<Exercise1/>)} >
+      <h1 className="text-center p-5 text-dark">Ejercicios</h1>
+      <table>
+
+        <tr className="d-flex justify-content-around list-unstyled" >
+          <td className="border border-dark p-3 rounded text-dark" onClick={() => setExercise (<Exercise1/>)} >
             Contador
-        </li>
-        <li className="border border-ligth p-3 rounded text-light" onClick={() => setExercise (<Exercise2/>)} >
+          </td>
+          <td className="border border-dark p-3 rounded text-dark" onClick={() => setExercise (<Exercise2/>)} >
             Patos
-        </li>
-        <li className="border border-ligth p-3 rounded text-light" onClick={() => setExercise (<Exercise3/>)} >
+          </td>
+          <td className='border border-dark p-3 rounded text-dark' onClick={() => setExercise (<Exercise3/>)} >
             Directorio
-        </li>
-      </ul>
-      <div className="text-center border border-ligth p-3 rounded" >{exercise}</div>
+          </td>
+        </tr>
+      </table>
+      <div className="text-center border border-dark p-3 rounded" >{exercise}</div>
     </section>
   );
 };

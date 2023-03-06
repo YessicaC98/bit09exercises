@@ -4,7 +4,7 @@ import Figure from 'react-bootstrap/Figure';
 export const Home = () => {
   return (
     <section className='d-flex flex-column'>
-        <h1 className="text-center">¡Bienvenidos a mi página de ejercicios de ReactJS!</h1>
+        <h1 className="text-center text-dark">¡Bienvenidos a mi página de ejercicios de ReactJS!</h1>
         <Figure className='text-center'>
           <Figure.Image
             roundedCircle
